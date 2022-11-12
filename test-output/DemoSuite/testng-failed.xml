@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <test thread-count="5" name="OrangeHRMLogin(failed)">
+    <classes>
+      <class name="com.hyr.tests.OrangeHRM">
+        <methods>
+          <include name="LaunchApp" invocation-numbers="0"/>
+          <include name="Teardown"/>
+          <include name="EnterLoginDetails"/>
+          <include name="InitiliseBrowser"/>
+          <include name="VerifyLogin"/>
+        </methods>
+      </class> <!-- com.hyr.tests.OrangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRMLogin(failed) -->
+  <test thread-count="5" name="OrangeHRMMyInfo(failed)">
+    <classes>
+      <class name="com.hyr.tests.OrangeHRM">
+        <methods>
+          <include name="LaunchApp" invocation-numbers="0"/>
+          <include name="Teardown"/>
+          <include name="NavigateToMyInfo"/>
+          <include name="EnterLoginDetails"/>
+          <include name="InitiliseBrowser"/>
+          <include name="VerifyMyInfo"/>
+        </methods>
+      </class> <!-- com.hyr.tests.OrangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRMMyInfo(failed) -->
+  <test thread-count="5" name="TestGoogle(failed)">
+    <classes>
+      <class name="com.hyr.tests.FirstTest">
+        <methods>
+          <include name="TestGoogle"/>
+        </methods>
+      </class> <!-- com.hyr.tests.FirstTest -->
+    </classes>
+  </test> <!-- TestGoogle(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->
